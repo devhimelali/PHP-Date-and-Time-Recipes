@@ -20,3 +20,12 @@
 | W | ISO-8601 week number of year, weeks starting on Monday | `$date->format('W')` | `1` | `1 through 53` |
 
 
+## Month format parameter string:
+| format character | description | example         | result | Example returned values|
+| ---------------- | ----------- |-----------------| ------ | -------|
+| m | Numeric representation of a month, with leading zeros | `$date->format('m')` | `01` | `01 through 12` |
+| n | Numeric representation of a month, without leading zeros | `$date->format('n')` | `1` | `1 through 12` |
+| F | A full textual representation of a month, such as January or March | `$date->format('F')` | `January` | `January through December` |
+| M | A short textual representation of a month, three letters | `$date->format('M')` | `Jan` | `Jan through Dec` |
+| t | Number of days in the given month | `$date->format('t')` | `31` | `28 through 31` |
+
