@@ -37,3 +37,18 @@
 | o | ISO-8601 year number | `$date->format('o')` | `2015` | `1999 through 9999` |
 | Y | A full numeric representation of a year, 4 digits | `$date->format('Y')` | `2015` | `1901 through 9999` |
 | y | A two digit representation of a year | `$date->format('y')` | `15` | `00 through 99` |
+
+## Time format parameter string:
+
+| format character | description | example         | result | Example returned values|
+| ---------------- | ----------- |-----------------| ------ | -------|
+| a | Lowercase Ante meridiem and Post meridiem | `$date->format('a')` | `am` | `am or pm` |
+| A | Uppercase Ante meridiem and Post meridiem | `$date->format('A')` | `AM` | `AM or PM` |
+| g | 12-hour format of an hour without leading zeros | `$date->format('g')` | `1` | `1 through 12` |
+| G | 24-hour format of an hour without leading zeros | `$date->format('G')` | `1` | `0 through 23` |
+| h | 12-hour format of an hour with leading zeros | `$date->format('h')` | `01` | `01 through 12` |
+| H | 24-hour format of an hour with leading zeros | `$date->format('H')` | `01` | `00 through 23` |
+| i | Minutes with leading zeros | `$date->format('i')` | `01` | `00 through 59` |
+| s | Seconds with leading zeros | `$date->format('s')` | `01` | `00 through 59` |
+| u | Microseconds | `$date->format('u')` | `000000` | `000000 through 999999` |
+| v | Milliseconds | `$date->format('v')` | `000` | `000 through 999` |
