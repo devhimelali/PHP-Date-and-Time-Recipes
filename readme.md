@@ -13,3 +13,10 @@
 | S | English ordinal suffix for the day of the month, 2 characters | `$date->format('S')` | `st` | `st, nd, rd or th. Works well with j` |
 | w | Numeric representation of the day of the week | `$date->format('w')` | `0` | `0 (for Sunday) through 6 (for Saturday)` |
 | z | The day of the year (starting from 0) | `$date->format('z')` | `0` | `0 through 365` |
+
+## Week format parameter string:
+| format character | description | example         | result | Example returned values|
+| ---------------- | ----------- |-----------------| ------ | -------|
+| W | ISO-8601 week number of year, weeks starting on Monday | `$date->format('W')` | `1` | `1 through 53` |
+
+
