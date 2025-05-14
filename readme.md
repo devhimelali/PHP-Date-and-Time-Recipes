@@ -29,3 +29,11 @@
 | M | A short textual representation of a month, three letters | `$date->format('M')` | `Jan` | `Jan through Dec` |
 | t | Number of days in the given month | `$date->format('t')` | `31` | `28 through 31` |
 
+## Year format parameter string:
+
+| format character | description | example         | result | Example returned values|
+| ---------------- | ----------- |-----------------| ------ | -------|
+| L | Whether it's a leap year | `$date->format('L')` | `false` | `false or true` |
+| o | ISO-8601 year number | `$date->format('o')` | `2015` | `1999 through 9999` |
+| Y | A full numeric representation of a year, 4 digits | `$date->format('Y')` | `2015` | `1901 through 9999` |
+| y | A two digit representation of a year | `$date->format('y')` | `15` | `00 through 99` |
